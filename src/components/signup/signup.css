@@ -1,0 +1,24 @@
+.signUpPage{
+    height: 90vh;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signupTitle{
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+.signUpBox{
+    height: 70%;
+    width: 40%;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+}
