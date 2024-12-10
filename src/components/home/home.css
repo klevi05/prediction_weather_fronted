@@ -1,0 +1,57 @@
+.homePage{
+    height: 90vh;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.serachingMenu{
+    height:20vh ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forecast{
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 2pc;
+    overflow-y: scroll;
+}
+.forecastBox{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 22px 0px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 30pc;
+}
+.icon{
+    height: 100%;
+    width: 30%;
+    align-self: center;
+}
+.iconDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.predictionInfo{
+    padding-left: 1.5pc;
+    padding-top: 0.5pc;
+}
+.navigation{
+    height: 8.5vh;
+    background-color: white;
+    border: none;
+    color: rgb(66, 65, 65);
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    display: none;      
+}

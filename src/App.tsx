@@ -3,7 +3,9 @@ import Login from "./components/login/login";
 import Signup from "./components/signup/signup";
 import Home from "./components/home/home";
 import PageNotFound from "./components/pagenotfound/pageNotFound";
+import { ReactSession } from 'react-client-session';
 function App() {
+  ReactSession.setStoreType("localStorage");
   return (
     <>
       <BrowserRouter>

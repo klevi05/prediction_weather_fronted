@@ -1,4 +1,4 @@
-.signUpPage{
+.pageLogin{
     height: 90vh;
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -6,11 +6,7 @@
     align-items: center;
     flex-direction: column;
 }
-.signupTitle{
-    font-size: 45px;
-    letter-spacing: 1px;
-}
-.signUpBox{
+.loginBox{
     height: 70%;
     width: 40%;
     border: 1px solid lightgray;
@@ -21,10 +17,4 @@
     justify-content: center;
     align-items: center;
     gap: 1pc;
-}
-.underline{
-    margin-top: 5%;
-}
-.underline a{
-    color: rgb(74, 74, 252);
 }
