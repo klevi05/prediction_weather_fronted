@@ -4,7 +4,8 @@ import TextField from '@mui/material/TextField';
 import bcrypt from "bcryptjs";
 import PlaceIcon from '@mui/icons-material/Place';
 import CircularProgress from '@mui/material/CircularProgress';
-import { useNavigate } from "react-router-dom";
+import { replace, useNavigate } from "react-router-dom";
+import Button from '@mui/material/Button';
 import sun from './static/sun.png'
 import rainy from './static/rainy.png'
 import cloudy from './static/cloudy.png'
@@ -57,7 +58,6 @@ function Home(){
                     const data = await response.json();
                     setRenderForecast(true)
                     setForecastData(data);
-                    console.log(data)
                   } catch (err) {
                     console.log(err);
                   }
@@ -75,12 +75,22 @@ function Home(){
             return sun
         }
     }
+    function logout(e){
+        e.preventDefault();
+        ReactSession.remove("passcode")
+        navigate('/', {replace:true})
+    }
     return(
         <>
          {render===false? '': 
             <>
             <div className="homePage">
-                <h1>Weather forecasting</h1>
+                <div className="navigationBar">
+                    <h1>Weather forecasting</h1>
+                    <div className="logout">
+                    <Button onClick={logout} variant="contained" color="error">Log Out</Button>
+                    </div>
+                </div>
                 <div className="serachingMenu">
                     <div className="seraching">
                     <TextField

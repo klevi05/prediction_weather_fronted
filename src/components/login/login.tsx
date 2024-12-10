@@ -22,6 +22,7 @@ function Login(){
                     }
                     try {
                         const response = await fetch( import.meta.env.VITE_KEY_LOGIN, {
+                            mode: 'cors',
                             method: 'POST',
                             headers: {
                               'Content-Type': 'application/json',
